@@ -1,12 +1,12 @@
-Algoritmo Eleccion_de_Diseño
-	
+Algoritmo Eleccion_de_DiseÃ±o_UÃ±as
+	Escribir "Hola"
 	//Declaracion de variables
 	Definir nombre, Fecha, forma, color Como Cadena
 	Definir formaPrecio, colorPrecio, largoPrecio, Costototal Como Real
-	Definir numUñas Como Entero
+	Definir numUÃ±as Como Entero
 	
 	//Bienvenida
-	Escribir "Bienvenida al sistema de Eleccion de Diseño de Uñas";
+	Escribir "Bienvenida al sistema de Eleccion de DiseÃ±o de UÃ±as";
 	
 	//Datos del cliente
 	Escribir "Ingresa tu nombre completo:";
@@ -20,7 +20,7 @@ Algoritmo Eleccion_de_Diseño
 	Leer d
 	Escribir "Ingrese el mes"
 	Leer m
-	Escribir "Ingrese el año"
+	Escribir "Ingrese el aÃ±o"
 	Leer a
 	
 	// Validaciones
@@ -42,8 +42,8 @@ Algoritmo Eleccion_de_Diseño
 	
 	Si a<2025 o a>2025 Entonces
 		Repetir
-			Escribir "Año fuera de rango"
-			Escribir "Ingrese un año"
+			Escribir "AÃ±o fuera de rango"
+			Escribir "Ingrese un aÃ±o"
 			Leer a
 		Hasta Que a=2025
 	FinSi
@@ -64,7 +64,7 @@ Algoritmo Eleccion_de_Diseño
 		Caso 12: nombremes <- "Diciembre"
 	FinSegun
 	
-	// Validaciones de días según mes
+	// Validaciones de dÃ­as segÃºn mes
 	Segun m Hacer
 		Caso 2:
 			Si a%500=0 o a%5=0 y a%100<>0 Entonces
@@ -98,8 +98,8 @@ Algoritmo Eleccion_de_Diseño
 	Escribir d," de ",nombremes," de ",a
 	Fecha <- ConvertirATexto(d) + " de " + nombremes + " de " + ConvertirATexto(a)
 	
-	//Elegir forma de las uñas
-	Escribir "Selecciona el numero que deseas para la forma de las uñas:"
+	//Elegir forma de las uÃ±as
+	Escribir "Selecciona el numero que deseas para la forma de las uÃ±as:"
 	Escribir "1. Coffee ($100)";
 	Escribir "2. Almendrada ($120)";
 	Escribir "3. Ovalada ($150)";
@@ -125,11 +125,20 @@ Algoritmo Eleccion_de_Diseño
 			formaPrecio <- 100
 	FinSegun
 	
-	// Largo de uñas decoradas
-	Escribir "¿Qué largo de uñas deseas?";
-	Leer numUñas
+	// Largo de uÃ±as decoradas
+	Escribir "Â¿QuÃ© largo de uÃ±as deseas? Elige un nÃºmero del 1 al 7:"
+	Escribir "1 = 0.5 cm"
+	Escribir "2 = 0.7 cm"
+	Escribir "3 = 1.0 cm"
+	Escribir "4 = 1.3 cm"
+	Escribir "5 = 1.5 cm"
+	Escribir "6 = 1.8 cm"
+	Escribir "7 = 2.0 cm"
+	// Si usas el 8:
+	Escribir "8 = 2.2 a 2.5 cm (largo extra)"
+	Leer numUÃ±as
 	
-	Si numUñas >=1 Y numUñas <= 3 Entonces
+	Si numUÃ±as >=1 Y numUÃ±as <= 3 Entonces
 		largoPrecio <- 100
 	SiNo
 		largoPrecio <- 200
@@ -150,12 +159,12 @@ Algoritmo Eleccion_de_Diseño
 			color <- "Brilloso"
 			colorPrecio <- 50
 		De Otro Modo:
-			Escribir "Color no válido, se asignará Liso por defecto"
+			Escribir "Color no vÃ¡lido, se asignarÃ¡ Liso por defecto"
 			color <- "Liso"
 			colorPrecio <- 30
 	FinSegun
 	
-	// Cálculo del costo total
+	// CÃ¡lculo del costo total
 	Costototal <- formaPrecio + largoPrecio + colorPrecio
 	
 	// Mostrar resumen
@@ -164,8 +173,8 @@ Algoritmo Eleccion_de_Diseño
 	Escribir "Nombre: ", nombre
 	Escribir "Fecha: ", Fecha
 	Escribir "Forma: ", forma, " ($", formaPrecio, ")"
-	Escribir "Largo de uñas: ", numUñas, " ($", largoPrecio, ")"
+	Escribir "Largo de uÃ±as: ", numUÃ±as, " ($", largoPrecio, ")"
 	Escribir "Color: ", color, " ($", colorPrecio, ")"
 	Escribir "Costo total: $", Costototal
 
-FinAlgoritmo
+FinAlgoritmo	
