@@ -1,0 +1,88 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f8d0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del perfil */
+.perfil {
+    background-color: #eb8bf8;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #010d0eff;
+    text-align: justify;
+}
+
+/* Imagen de perfil */
+#foto-perfil {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #e5e9ec;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+/* Lista de datos personales */
+.lista-datos {
+    background-color: #f3a2f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lista-datos li {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.lista-datos li span {
+    font-weight: bold;
+}
+
+/* Enlaces */
+a {
+    color: #5846f8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.pie {
+    text-align: center;
+    font-size: 1em;
+    color: #95a5a6;
+    margin-top: 40px;
+}
