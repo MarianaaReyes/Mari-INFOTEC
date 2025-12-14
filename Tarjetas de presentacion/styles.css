@@ -1,0 +1,99 @@
+/* ================= CONFIGURACIÓN GENERAL ================= */
+/* Estilos generales de toda la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    background-color: #f6f8fc;      /* Color de fondo */
+    margin: 0;                      /* Elimina márgenes */
+    text-align: center;             /* Centra el texto */
+}
+
+/* ================= ENCABEZADO ================= */
+/* Estilos del encabezado principal */
+#encabezado {
+    background-color: #cfe3ff; /* Color de fondo */
+    padding: 25px;             /* Espacio interno */
+}
+
+#encabezado h1 {
+    margin: 0;                 /* Quita margen superior */
+    color: #2c3e50;            /* Color del texto */
+}
+
+/* Texto descriptivo del encabezado */
+.descripcion {
+    margin-top: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* ================= CONTENEDOR PRINCIPAL ================= */
+/* Contenedor que organiza las tarjetas */
+.contenedor {
+    display: flex;             /* Acomoda las tarjetas en fila */
+    justify-content: center;   /* Centra las tarjetas */
+    gap: 20px;                 /* Espacio entre tarjetas */
+    padding: 40px;
+    flex-wrap: wrap;           /* Permite que bajen en pantallas pequeñas */
+}
+
+/* ================= TARJETAS ================= */
+/* Diseño de cada tarjeta */
+.tarjeta {
+    background-color: #ffffff;
+    width: 280px;
+    border-radius: 15px;       /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* ================= IMÁGENES ================= */
+/* Estilo de las imágenes dentro de las tarjetas */
+.tarjeta img {
+    width: 80%;                /* Tamaño reducido */
+    max-width: 150px;          /* Tamaño máximo */
+    height: auto;              /* Mantiene proporción */
+    border-radius: 50%;        /* Forma ovalada */
+    border: 5px solid #a7c7ff; /* Borde decorativo */
+    margin-bottom: 15px;
+}
+
+/* Títulos de las tarjetas */
+.tarjeta h2 {
+    color: #6a5acd;
+}
+
+/* Texto descriptivo */
+.tarjeta p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ================= BOTÓN ================= */
+/* Estilo del botón "Ver más" */
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #a7c7ff;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Efecto cuando pasas el mouse */
+.boton:hover {
+    background-color: #8fb5ff;
+}
+
+/* ================= PIE DE PÁGINA ================= */
+/* Estilos del footer */
+.footer {
+    background-color: #eaf0ff;
+    padding: 15px;
+    font-size: 13px;
+    color: #555;
+    margin-top: 30px;
+}
