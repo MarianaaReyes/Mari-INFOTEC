@@ -1,0 +1,48 @@
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* ===== TARJETA DE EVENTO ===== */
+.evento {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  border-left: 8px solid #14b8a6;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* TÍTULO */
+.evento h3 {
+  margin-top: 0;
+  color: #0f766e;
+}
+
+/* TEXTO */
+.evento p {
+  margin: 8px 0;
+  color: #065f46;
+}
+
+/* BOTONES */
+.actions {
+  margin-top: 18px;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 25px;
+  background: #14b8a6;
+  color: white;
+  text-decoration: none;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.actions a:hover {
+  background: #0d9488;
+}

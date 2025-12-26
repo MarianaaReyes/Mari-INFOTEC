@@ -1,0 +1,45 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f0fdfa;
+  color: #064e3b;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #0f766e, #14b8a6);
+  color: white;
+  padding: 22px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #ecfeff;
+  margin-right: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTENEDOR ===== */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 35px auto;
+}
