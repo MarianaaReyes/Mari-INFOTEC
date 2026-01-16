@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+<header>
+  <h1>Registro de Asistentes</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="registro.html">Registro</a>
+    <a href="participantes.html">Participantes</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <form class="form" id="formRegistro">
+
+      <h2>Registro</h2>
+
+      <label>Evento</label>
+      <select id="evento" required></select>
+
+      <label>Tipo</label>
+      <div class="radioRow">
+        <label class="radio"><input type="radio" name="tipo" value="Asistente" checked> Asistente</label>
+        <label class="radio"><input type="radio" name="tipo" value="Ponente"> Ponente</label>
+      </div>
+
+      <hr class="sep">
+
+      <h3>Datos generales</h3>
+      <div class="grid2">
+        <input type="text" id="nombre" placeholder="Nombre completo *" required>
+        <input type="email" id="email" placeholder="Email *" required>
+        <input type="tel" id="telefono" placeholder="Teléfono *" required>
+        <input type="text" id="empresa" placeholder="Empresa / Institución">
+        <input type="text" id="pais" placeholder="País / Ciudad">
+      </div>
+
+      <h3>Datos del Asistente</h3>
+      <div id="asistenteCampos" class="box box--asist">
+        <div class="grid2">
+          <select id="nivel">
+            <option value="">Nivel de experiencia</option>
+            <option>Principiante</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+          </select>
+          <input type="text" id="intereses" placeholder="Áreas de interés">
+        </div>
+
+        <label class="check">
+          <input type="checkbox" id="certificado">
+          Requiere certificado
+        </label>
+      </div>
+
+      <h3>Datos del Ponente</h3>
+      <div id="ponenteCampos" class="box box--pon">
+        <div class="grid2">
+          <input type="text" id="titulo" placeholder="Título de la ponencia">
+          <input type="number" id="duracion" placeholder="Duración estimada (min)">
+        </div>
+
+        <input type="text" id="requisitos" placeholder="Requerimientos técnicos">
+        <textarea id="bio" placeholder="Biografía profesional"></textarea>
+        <input type="text" id="redes" placeholder="Redes sociales / links">
+      </div>
+
+      <div class="form__actions">
+        <button type="submit">Registrar</button>
+        <a class="btn-link" href="index.html">Cancelar</a>
+        <a class="btn-link" href="participantes.html">Ver participantes registrados</a>
+      </div>
+
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 - Sistema de Eventos</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

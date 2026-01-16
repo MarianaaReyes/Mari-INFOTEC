@@ -1,0 +1,188 @@
+/* ===== VARIABLES ===== */
+:root{
+  --primary: #14b8a6;
+  --asist: #16a34a;
+  --pon: #ea580c;
+  --asist-soft: #ecfdf5;
+  --pon-soft: #fff7ed;
+  --line: #d1fae5;
+  --card: #ffffff;
+  --muted: #065f46;
+  --r: 14px;
+}
+
+/* ===== RESET ===== */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f0fdfa;
+  color: #064e3b;
+}
+
+/* ===== HEADER ===== */
+header{
+  background: linear-gradient(90deg, #0f766e, var(--primary));
+  color: white;
+  padding: 22px;
+}
+
+header h1{
+  margin: 0;
+  font-size: 26px;
+}
+
+/* ===== CONTENEDOR ===== */
+main{
+  width: 90%;
+  max-width: 900px;
+  margin: 35px auto;
+}
+
+/* ===== TARJETA ===== */
+.card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 18px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+/* ===== FORMULARIO ===== */
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form h3{
+  margin-bottom: 6px;
+  color: #0f766e;
+}
+
+/* ===== INPUTS ===== */
+input,
+select,
+textarea{
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  font-size: 14px;
+  width: 100%;
+}
+
+/* ===== RADIO ===== */
+.radioRow{
+  display: flex;
+  gap: 18px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.radio{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.radio input{
+  accent-color: var(--primary);
+}
+
+/* ===== CAJAS ===== */
+.box{
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  background: #fff;
+  transition: .3s ease;
+}
+
+.box--asist{
+  background: var(--asist-soft);
+  border-color: rgba(22,163,74,.4);
+}
+
+.box--pon{
+  background: var(--pon-soft);
+  border-color: rgba(234,88,12,.4);
+}
+
+/* ===== CHECK ===== */
+.check{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.check input{
+  accent-color: var(--asist);
+}
+
+/* ===== BOTONES ===== */
+button{
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #0d9488;
+}
+
+.btn-delete{
+  margin-top: 8px;
+  padding: 6px 14px;
+  background: #ef4444;
+  border-radius: 20px;
+}
+
+.btn-delete:hover{
+  background: #dc2626;
+}
+
+/* ===== LISTA ===== */
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  background: #ffffff;
+  border-left: 6px solid var(--primary);
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+/* ===== VALIDACIÓN VISUAL ===== */
+input:invalid,
+select:invalid,
+textarea:invalid{
+  border-color: rgba(239,68,68,.8);
+}
+
+input:valid,
+select:valid,
+textarea:valid{
+  border-color: rgba(34,197,94,.8);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px){
+  .radioRow{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Participantes</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/eventos.css">
+</head>
+<body>
+
+<header>
+  <h1>Participantes Registrados</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="registro.html">Registro</a>
+    <a href="participantes.html">Participantes</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="card">
+    <div class="toolbar">
+      <select id="fEvento"></select>
+      <input id="fSearch" type="search" placeholder="Buscar por nombre o email..." />
+      <button id="btnLimpiar" type="button">Limpiar</button>
+    </div>
+
+    <div class="statsRow">
+      <span class="pill" id="statTotal">Total: 0</span>
+      <span class="pill pill--asist" id="statAsist">Asistentes: 0</span>
+      <span class="pill pill--pon" id="statPon">Ponentes: 0</span>
+    </div>
+
+    <div class="tableWrap">
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>Evento</th>
+            <th>Tipo</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Empresa</th>
+            <th>País/Ciudad</th>
+            <th>Fecha</th>
+            <th>Detalle</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 - Sistema de Eventos</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
