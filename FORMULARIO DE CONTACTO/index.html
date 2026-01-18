@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Formulario de Contacto</h1>
+      <p class="subtitle">Envíame un mensaje y te responderé lo antes posible.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contáctame</h2>
+
+      <form id="contactForm" class="form" novalidate>
+        <fieldset class="fieldset">
+          <legend>Datos de contacto</legend>
+
+          <div class="grid">
+            <div class="field">
+              <label for="fullName">Nombre completo <span class="req">*</span></label>
+              <input
+                id="fullName"
+                name="fullName"
+                type="text"
+                placeholder="Ingresa tu nombre completo"
+                required
+                minlength="3"
+                autocomplete="name"
+              />
+              <small class="help" id="helpName">Mínimo 3 caracteres.</small>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo electrónico <span class="req">*</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="tucorreo@ejemplo.com"
+                required
+                autocomplete="email"
+              />
+              <small class="help" id="helpEmail">Debe tener formato de email válido.</small>
+            </div>
+
+            <div class="field">
+              <label for="phone">Teléfono <span class="req">*</span></label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Ej. 5512345678"
+                required
+                inputmode="tel"
+                autocomplete="tel"
+                pattern="^[0-9+\s()-]{8,}$"
+              />
+              <small class="help" id="helpPhone">Mínimo 8 caracteres (números y símbolos válidos).</small>
+            </div>
+
+            <div class="field">
+              <label for="subject">Asunto / Motivo <span class="req">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="" selected>Selecciona un asunto</option>
+                <option value="Oferta laboral">Oferta laboral</option>
+                <option value="Colaboración">Colaboración</option>
+                <option value="Consulta técnica">Consulta técnica</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <small class="help" id="helpSubject">Selecciona una opción.</small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensaje <span class="req">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Describe tu mensaje en detalle..."
+              required
+              minlength="10"
+              rows="6"
+            ></textarea>
+            <small class="help" id="helpMsg">Mínimo 10 caracteres.</small>
+          </div>
+        </fieldset>
+
+        <div class="terms">
+          <label class="check" for="terms">
+            <input id="terms" name="terms" type="checkbox" required />
+            Acepto la política de privacidad y términos de uso <span class="req">*</span>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="btnSend">Enviar Mensaje</button>
+          <button type="reset" id="btnClear" class="btn-secondary">Limpiar formulario</button>
+        </div>
+
+        <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 - Mary Olmos</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
