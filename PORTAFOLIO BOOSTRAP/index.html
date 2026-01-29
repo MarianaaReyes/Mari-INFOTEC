@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Mariana Olmos</title>
+
+  <!-- Bootstrap 5 (CSS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- NAVBAR -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm bg-primary">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#perfil">
+        <i class="bi bi-stars"></i>
+        Mariana Olmos
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PERFIL (HERO / JUMBOTRON STYLE) -->
+  <header id="perfil" class="py-5 bg-soft">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-5 text-center">
+          <img
+            src="imagenes/foto Mary web.jpg"
+            alt="Foto de Mariana Olmos"
+            class="img-fluid rounded-circle shadow border border-4 border-accent profile-img"
+          />
+        </div>
+
+        <div class="col-12 col-md-7">
+          <h1 class="display-5 fw-bold text-primary mb-2">Mariana Olmos</h1>
+          <p class="fs-4 fw-semibold text-accent mb-3">Lashista • Estilista • Futbolista</p>
+
+          <p class="lead text-body">
+            Me apasiona compartir mis conocimientos y siempre busco aprender algo nuevo,
+            perfeccionando mis técnicas en el área estética y fortaleciendo valores como
+            la constancia, el compromiso y la disciplina, tanto en mi vida profesional como deportiva.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <a class="btn btn-primary btn-lg" href="#proyectos">
+              <i class="bi bi-grid-3x3-gap me-2"></i>Ver Proyectos
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="#contacto">
+              <i class="bi bi-envelope me-2"></i>Contactarme
+            </a>
+          </div>
+
+          <!-- Grid de “tecnologías / habilidades” -->
+          <div class="mt-5">
+            <h2 class="h4 fw-bold text-primary mb-3">Áreas / Tecnologías</h2>
+            <div class="row g-3">
+              <div class="col-6 col-lg-4">
+                <div class="p-3 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-2 justify-content-center">
+                  <i class="bi bi-brush fs-4 text-accent"></i><span class="fw-semibold">Estética</span>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="p-3 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-2 justify-content-center">
+                  <i class="bi bi-scissors fs-4 text-accent"></i><span class="fw-semibold">Cabello</span>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="p-3 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-2 justify-content-center">
+                  <i class="bi bi-dribbble fs-4 text-accent"></i><span class="fw-semibold">Deporte</span>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="p-3 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-2 justify-content-center">
+                  <i class="bi bi-people fs-4 text-accent"></i><span class="fw-semibold">Atención</span>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="p-3 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-2 justify-content-center">
+                  <i class="bi bi-check2-circle fs-4 text-accent"></i><span class="fw-semibold">Calidad</span>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="p-3 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-2 justify-content-center">
+                  <i class="bi bi-lightning fs-4 text-accent"></i><span class="fw-semibold">Constancia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HABILIDADES / EXPERIENCIA -->
+  <section id="habilidades" class="py-5">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <h2 class="fw-bold text-primary mb-3">Habilidades</h2>
+
+          <div class="bg-white rounded-4 shadow-sm border p-4">
+            <div class="d-flex justify-content-between">
+              <span class="fw-semibold"><i class="bi bi-eye me-2 text-accent"></i>Extensiones de Pestañas</span>
+              <span class="text-muted">90%</span>
+            </div>
+            <div class="progress mb-3" role="progressbar" aria-label="Pestañas" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar w-90"></div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <span class="fw-semibold"><i class="bi bi-scissors me-2 text-accent"></i>Alisados / Tratamientos</span>
+              <span class="text-muted">85%</span>
+            </div>
+            <div class="progress mb-3" role="progressbar" aria-label="Cabello" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar w-85"></div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <span class="fw-semibold"><i class="bi bi-heart-pulse me-2 text-accent"></i>Rendimiento Deportivo</span>
+              <span class="text-muted">100%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Deporte" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar w-100"></div>
+            </div>
+
+            <p class="text-muted small mt-3 mb-0">
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h2 class="fw-bold text-primary mb-3">Experiencia</h2>
+
+          <div class="bg-white rounded-4 shadow-sm border p-4">
+            <ul class="timeline list-unstyled m-0">
+              <li class="timeline-item pb-4">
+                <div class="timeline-dot"></div>
+                <div class="ms-4">
+                  <h3 class="h6 fw-bold mb-1">Servicios de Estética</h3>
+                  <p class="text-muted mb-1">Lashista / Atención personalizada</p>
+                  <p class="mb-0">Enfoque en técnica, higiene, estilo y resultados naturales.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item pb-4">
+                <div class="timeline-dot"></div>
+                <div class="ms-4">
+                  <h3 class="h6 fw-bold mb-1">Tratamientos Capilares</h3>
+                  <p class="text-muted mb-1">Alisados / Nutrición / Control frizz</p>
+                  <p class="mb-0">Aplicación cuidadosa y recomendaciones de mantenimiento.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="ms-4">
+                  <h3 class="h6 fw-bold mb-1">Fútbol</h3>
+                  <p class="text-muted mb-1">Disciplina / Constancia / Trabajo en equipo</p>
+                  <p class="mb-0">Mejora continua dentro y fuera de la cancha.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-5 bg-soft">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+        <h2 class="fw-bold text-primary m-0">Mis Proyectos</h2>
+        <span class="badge text-bg-primary fs-6">Cards responsivas</span>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <img src="imagenes/Pestañas.jpg" class="card-img-top rounded-top-4" alt="Extensiones de Pestañas">
+            <div class="card-body">
+              <h3 class="card-title h5 fw-bold text-primary">Extensiones de Pestañas</h3>
+              <p class="card-text text-body">
+                Servicio estético que realza la mirada, elevando tu seguridad y resaltando tu esencia.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4 px-3">
+              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <img src="imagenes/Alisado.jpg" class="card-img-top rounded-top-4" alt="Alisados de Cabello">
+            <div class="card-body">
+              <h3 class="card-title h5 fw-bold text-primary">Alisados de Cabello</h3>
+              <p class="card-text text-body">
+                Tratamientos capilares para reducir frizz, alisar y nutrir logrando acabado suave, brillante y saludable.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4 px-3">
+              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <img src="imagenes/Futbol.jpg" class="card-img-top rounded-top-4" alt="Fútbol">
+            <div class="card-body">
+              <h3 class="card-title h5 fw-bold text-primary">Fútbol</h3>
+              <p class="card-text text-body">
+                Mi pasión por el fútbol me lleva a dar siempre lo mejor de mí y crecer dentro y fuera de la cancha.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4 px-3">
+              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <h2 class="fw-bold text-primary mb-3">Contacto</h2>
+          <p class="text-muted mb-4">Completa el formulario. Los campos con * son obligatorios.</p>
+
+          <!-- Alertas -->
+          <div id="formAlertSuccess" class="alert alert-success d-none" role="alert">
+            ¡Listo! Tu mensaje fue validado correctamente (demo).
+          </div>
+          <div id="formAlertError" class="alert alert-danger d-none" role="alert">
+            Revisa los campos marcados. Falta información o hay datos inválidos.
+          </div>
+
+          <form id="contact-form" class="needs-validation" novalidate>
+            <div class="card border-0 shadow-sm rounded-4">
+              <div class="card-body p-4">
+
+                <!-- Nombre (Input Group) -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="nombre">Nombre completo *</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre completo" required>
+                    <div class="invalid-feedback">Escribe tu nombre completo.</div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="email">Email *</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                    <div class="invalid-feedback">Ingresa un email válido.</div>
+                  </div>
+                </div>
+
+                <!-- Asunto -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="asunto">Asunto *</label>
+                  <input type="text" id="asunto" class="form-control" placeholder="¿Sobre qué quieres hablar?" required>
+                  <div class="invalid-feedback">Escribe el asunto.</div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="telefono">Teléfono *</label>
+                  <input type="tel" id="telefono" class="form-control" placeholder="Ej. 5512345678" required pattern="^[0-9]{8,15}$">
+                  <div class="invalid-feedback">Usa solo números (8 a 15 dígitos).</div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="mensaje">Mensaje *</label>
+                  <textarea id="mensaje" class="form-control" rows="5" placeholder="Describe tu mensaje..." required></textarea>
+                  <div class="invalid-feedback">Escribe tu mensaje.</div>
+                </div>
+
+                <!-- Términos -->
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" id="terminos" required>
+                  <label class="form-check-label" for="terminos">
+                    Acepto términos y condiciones *
+                  </label>
+                  <div class="invalid-feedback">Debes aceptar los términos.</div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-primary" type="submit">
+                    <i class="bi bi-send me-2"></i>Enviar
+                  </button>
+                  <button class="btn btn-outline-secondary" type="reset" id="btnReset">
+                    <i class="bi bi-arrow-counterclockwise me-2"></i>Reset
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-primary text-white">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-4 align-items-center">
+
+        <div class="col-12 col-md-4">
+          <h3 class="h6 fw-bold mb-2">Contacto</h3>
+          <p class="mb-1"><i class="bi bi-envelope me-2"></i>maryolmos698@gmail.com</p>
+          <p class="mb-0"><i class="bi bi-telephone me-2"></i>+52 55 68070890</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h3 class="h6 fw-bold mb-2">Enlaces rápidos</h3>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="link-light text-decoration-none" href="#perfil">Perfil</a>
+            <a class="link-light text-decoration-none" href="#habilidades">Habilidades</a>
+            <a class="link-light text-decoration-none" href="#proyectos">Proyectos</a>
+            <a class="link-light text-decoration-none" href="#contacto">Contacto</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h3 class="h6 fw-bold mb-2">Redes</h3>
+          <div class="d-flex gap-3 fs-4">
+            <a class="link-light" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="link-light" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="link-light" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-light opacity-25 my-4">
+
+      <p class="mb-0 text-center small">
+        &copy; 2026 - Mariana Olmos. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 (JS Bundle con Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu script -->
+  <script src="script.js"></script>
+</body>
+</html>

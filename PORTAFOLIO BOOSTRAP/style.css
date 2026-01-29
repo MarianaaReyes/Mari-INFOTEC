@@ -1,0 +1,118 @@
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7e6f2;
+}
+
+/* Colores “marca” */
+:root{
+  --primary: #e91e63;
+  --accent: #f533ab;
+  --soft: #fff3f8;
+}
+
+/* Helpers */
+.text-primary { color: var(--primary) !important; }
+.text-accent { color: var(--accent) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.bg-soft { background-color: var(--soft) !important; }
+.border-accent { border-color: #f382a8 !important; }
+
+/* Imagen de perfil */
+.profile-img{
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Progress bar widths (para no forzar estilos inline) */
+.progress { height: 10px; }
+.progress-bar { background-color: var(--primary); }
+.w-90 { width: 90%; }
+.w-85 { width: 85%; }
+.w-80 { width: 80%; }
+
+/* Timeline */
+.timeline-item{
+  position: relative;
+  padding-left: 10px;
+  border-left: 2px solid rgba(233,30,99,.25);
+}
+.timeline-dot{
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+/* ===== TU REGLA (EXACTA) ===== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Estilo para las imágenes de los proyectos */
+.card-img-top {
+    width: 100%;                /* Ocupa todo el ancho del contenedor */
+    height: auto;               /* Mantiene la proporción original de la imagen */
+    object-fit: cover;          /* Asegura que la imagen cubra todo el espacio sin deformarse */
+    border-radius: 50%;         /* Hace que la imagen sea ovalada (redondea completamente) */
+    margin: 10px auto;          /* Centra la imagen y agrega un margen para que no toque los bordes */
+    display: block;             /* Asegura que la imagen sea un bloque para centrarse correctamente */
+}
+/* Estilo para las tarjetas de los proyectos */
+.card {
+    padding: 20px;                /* Agrega un relleno dentro de la tarjeta para dar espacio */
+    overflow: hidden;             /* Asegura que nada se salga del borde de la tarjeta */
+}
+/* Estilo para las imágenes ovaladas con borde rosa */
+.card-img-top {
+    width: 120px;                  /* Ajusta el tamaño */
+    height: 120px;                 /* Mantén las imágenes cuadradas para que se vuelvan circulares */
+    object-fit: cover;             /* Asegura que la imagen no se deforme */
+    border-radius: 50%;            /* Hace la imagen ovalada */
+    margin: 0 auto;                /* Centra la imagen en su contenedor */
+    border: 5px solid #f533ab;     /* Agrega el borde rosa */
+    transition: transform 0.3s ease; /* Añade un efecto suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre las imágenes */
+.card-img-top:hover {
+    transform: scale(1.1);         /* Amplía la imagen al pasar el ratón */
+}
+/* Efecto para las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre las tarjetas */
+.card:hover {
+    transform: translateY(-10px);  /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Agrega sombra para resaltar */
+}
+/* Asegura que el pie de página esté siempre al fondo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    width: 100%;               /* Asegura que el pie de página ocupe todo el ancho */
+    position: relative;        /* Para evitar que se quede en medio de la página */
+    bottom: 0;
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+}
